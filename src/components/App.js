@@ -16,15 +16,29 @@ function Home() {
   );
 }
 
-{/* write an <About> component here */}
+// function About (){
+//   return (
+//     <div id="about">
+//       <h2>
+//       About
+//       </h2>
+//     </div>
+//   )
+// }
 
+
+
+// I have done it above with the normal function declaration, but I am not going to do it
+// Using an arrow function
+
+const About = () => <div id="about"><h2>About</h2></div>;
 
 function App() {
   return (
     <div>
       <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      <Home />
+      <About />
     </div>
   );
 }
